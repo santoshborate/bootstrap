@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bootstrap Form Control States</h1>
+    <ul>
+        <li>INPUT FOCUS - The outline of the input is removed and a box-shadow is applied on focus</li>
+        <li>DISABLED INPUTS - Add a disabled attribute to disable an input field</li>
+        <li>DISABLED FIELDSETS - Add a disabled attribute to a fieldset to disable all controls within</li>
+        <li>READONLY INPUTS - Add a readonly attribute to an input to prevent user input</li>
+        <li>VALIDATION STATES - Bootstrap includes validation styles for error, warning, and success messages. To use, add .has-warning, .has-error, or .has-success to the parent element</li>
+        <li>ICONS - You can add feedback icons with the .has-feedback class and an icon</li>
+        <li>HIDDEN LABELS - Add a .sr-only class on non-visible labels</li>
+    </ul>
+    <p>The following example demonstrates some of the form control states above in a Horizontal form:</p>
+
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Focused</label>
+            <div class="col-sm-10">
+                <input class="form-control" id="focusedInput" type="text" value="Click to focus">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="disabledInput" class="col-sm-2 control-label">Disabled</label>
+            <div class="col-sm-10">
+                <input class="form-control" id="disabledInput" type="text" disabled>
+            </div>
+        </div>
+        <fieldset disabled>
+            <div class="form-group">
+                <label for="disabledTextInput" class="col-sm-2 control-label">Fieldset disabled</label>
+                <div class="col-sm-10">
+                    <input type="text" id="disabledTextInput" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="disabledSelect" class="col-sm-2 control-label"></label>
+                <div class="col-sm-10">
+                    <select id="disabledSelect" class="form-control">
+                        <option>Disabled select</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group has-success has-feedback">
+            <label class="col-sm-2 control-label" for="inputSuccess">
+                Input with success and icon</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputSuccess">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+        </div>
+        <div class="form-group has-warning has-feedback">
+            <label class="col-sm-2 control-label" for="inputWarning">
+                Input with warning and icon</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputWarning">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            </div>
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label class="col-sm-2 control-label" for="inputError">
+                Input with error and icon</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputError">
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+        </div>
+    </form>
+
+
+</div>
+
+</body>
+</html> 
