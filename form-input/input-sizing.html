@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Input Sizing in Forms</h1>
+    <p>Set the heights of input elements using classes like .input-lg and .input-sm.</p>
+    <p>Set the widths of elements using grid column classes like .col-lg-*and .col-sm-*.</p>
+
+
+    <form>
+        <div class="form-group">
+            <label for="inputsm">Small input</label>
+            <input class="form-control input-sm" id="inputsm" type="text">
+        </div>
+        <div class="form-group">
+            <label for="inputdefault">Default input</label>
+            <input class="form-control" id="inputdefault" type="text">
+        </div>
+        <div class="form-group">
+            <label for="inputlg">Large input</label>
+            <input class="form-control input-lg" id="inputlg" type="text">
+        </div>
+    </form>
+
+
+    <h1>Column Sizing</h1>
+    <p>The following examples shows input elements with different widths using different .col-xs-* classes:</p>
+    <div class="form-group row">
+        <div class="col-xs-2">
+            <label for="ex1">col-xs-2</label>
+            <input class="form-control" id="ex1" type="text">
+        </div>
+        <div class="col-xs-3">
+            <label for="ex2">col-xs-3</label>
+            <input class="form-control" id="ex2" type="text">
+        </div>
+        <div class="col-xs-4">
+            <label for="ex3">col-xs-4</label>
+            <input class="form-control" id="ex3" type="text">
+        </div>
+    </div>
+
+    <h1>Help Text</h1>
+    <p>Use the .help-block class to add a block level help text in forms:</p>
+    <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        <span class="help-block">This is some help text...</span>
+    </div>
+
+</div>
+
+</body>
+</html> 
