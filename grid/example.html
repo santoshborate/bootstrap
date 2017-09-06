@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bootstrap Grid System</h1>
+    <h1>Three equal column</h1>
+    <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+    </div>
+
+    <h1>Three Unequal Columns</h1>
+    <div class="row">
+        <div class="col-sm-3">.col-sm-3</div>
+        <div class="col-sm-6">.col-sm-6</div>
+        <div class="col-sm-3">.col-sm-3</div>
+    </div>
+
+    <h1>Two Unequal Columns</h1>
+    <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-8">.col-sm-8</div>
+    </div>
+
+    <h1>Two Columns With Two Nested Columns</h1>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-6">.col-sm-6</div>
+                <div class="col-sm-6">.col-sm-6</div>
+            </div>
+        </div>
+        <div class="col-sm-4">.col-sm-4</div>
+    </div>
+
+    <h1>Mixed: Mobile And Desktop</h1>
+    <div class="row">
+        <div class="col-xs-9 col-md-7">.col-xs-9 .col-md-7</div>
+        <div class="col-xs-3 col-md-5">.col-xs-3 .col-md-5</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-md-10">.col-xs-6 .col-md-10</div>
+        <div class="col-xs-6 col-md-2">.col-xs-6 .col-md-2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">.col-xs-6</div>
+        <div class="col-xs-6">.col-xs-6</div>
+    </div>
+
+    <h1>Clear Floats</h1>
+    <p>Clear floats (with the .clearfix class) at specific breakpoints to prevent strange wrapping with uneven content:</p>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3">
+            Column 1
+            <br>
+            Resize the browser window to see the effect.
+        </div>
+        <div class="col-xs-6 col-sm-3">Column 2</div>
+        <!-- Add clearfix for only the required viewport -->
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-3">Column 3</div>
+        <div class="col-xs-6 col-sm-3">Column 4</div>
+    </div>
+
+    <h1>Offsetting Columns</h1>
+    <p>Move columns to the right using .col-md-offset-* classes. These classes increase the left margin of a column by * columns:</p>
+    <div class="row">
+        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
+            .col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+    </div>
+
+    <h1>Push And Pull - Change Column Ordering</h1>
+    <p>Change the order of the grid columns with .col-md-push-* and .col-md-pull-* classes:</p>
+    <div class="row">
+        <div class="col-sm-4 col-sm-push-8">.col-sm-4 .col-sm-push-8</div>
+        <div class="col-sm-8 col-sm-pull-4">.col-sm-8 .col-sm-pull-4</div>
+    </div>
+
+</div>
+
+</body>
+</html> 
